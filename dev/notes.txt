@@ -1,1 +1,4 @@
-- create components: Employees and Customers
+- .. create components: Employees and Customers
+- appData in main
+
+- make getAppData()

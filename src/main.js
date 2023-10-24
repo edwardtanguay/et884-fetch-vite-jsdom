@@ -4,8 +4,7 @@ import { Employees } from './components/Employees';
 
 const url = 'https://edwardtanguay.vercel.app/share/employees.json';
 
-const response = await axios.get(url);
-const employees = await response.data;
+const employees = (await axios.get(url)).data;
 
 document.querySelector('#app').innerHTML = `
   <h1>Axios example</h1>
