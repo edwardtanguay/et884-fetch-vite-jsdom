@@ -6,11 +6,13 @@ import { Customers } from './components/Customers';
 const employeesUrl = 'https://edwardtanguay.vercel.app/share/employees.json';
 const customersUrl = 'https://edwardtanguay.vercel.app/share/customers.json';
 
-const employees = (await axios.get(employeesUrl)).data;
-const customers = (await axios.get(customersUrl)).data;
+const appData = {
+  employees: (await axios.get(employeesUrl)).data,
+  customers: (await axios.get(customersUrl)).data
+}
 
 document.querySelector('#app').innerHTML = `
   <h1>Axios example</h1>
-  ${Employees(employees)}
-  ${Customers(customers)}
+  ${Employees(appData)}
+  ${Customers(appData)}
 `
