@@ -1,6 +1,6 @@
-export const Customers = ({version, customers}) => {
+export const Customers = () => {
 	return /*html*/ `
-		<h2>Customers - Version ${version}</h2>
-  		<p>There are ${customers.length} customers.</p>
+		<h2>Customers - Version ${document.appData.version}</h2>
+  		<p>There are ${document.appData.customers.length} customers.</p>
 	`;
 }

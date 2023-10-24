@@ -15,6 +15,6 @@ document.appData = appData;
 
 document.querySelector('#app').innerHTML = `
   <h1>Axios example</h1>
-  ${Employees(appData)}
-  ${Customers(appData)}
+  ${Employees()}
+  ${Customers()}
 `

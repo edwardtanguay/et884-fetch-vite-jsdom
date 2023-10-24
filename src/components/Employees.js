@@ -1,8 +1,7 @@
-export const Employees = (appData) => {
-	appData.version = '1.3';
+export const Employees = () => {
 	return /*html*/ `
-		<h2>Employees - Version ${appData.version}</h2>
-  		<p>There are ${appData.employees.length} employees.</p>
+		<h2>Employees - Version ${document.appData.version}</h2>
+  		<p>There are ${document.appData.employees.length} employees.</p>
 
 	`;
 };
